@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://www.google.com/jsapi?key=YOUR-API-KEY"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <title>Copa Kart dos Amigos</title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/home.css') }}"/>
+    <meta name=ProgId content=Excel.Sheet>
+    <meta name=Generator content="Microsoft Excel 15">
+    <link rel=File-List href="Pasta1_arquivos/filelist.xml">
+    <style id="Pasta1_453_Styles">
+
+
+
+    <style>
+    <!--table
+        {mso-displayed-decimal-separator:"\.";
+        mso-displayed-thousand-separator:"\,";}
+    .xl15453
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:11.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:general;
+        vertical-align:bottom;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl65453
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:11.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:General;
+        text-align:center;
+        vertical-align:bottom;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    .xl66453
+        {padding-top:1px;
+        padding-right:1px;
+        padding-left:1px;
+        mso-ignore:padding;
+        color:black;
+        font-size:11.0pt;
+        font-weight:400;
+        font-style:normal;
+        text-decoration:none;
+        font-family:Calibri, sans-serif;
+        mso-font-charset:0;
+        mso-number-format:0;
+        text-align:center;
+        vertical-align:bottom;
+        mso-background-source:auto;
+        mso-pattern:auto;
+        white-space:nowrap;}
+    -->
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CQ24QESVY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0CQ24QESVY');
+    </script>
+    {% block head %}
+    {% endblock %}
+</head>
+
+
+<header>
+    <img src="static/imagens/Logo.jpg" class="shadow p-3 m-2 bg-white rounded rounded-top mx-auto d-block img-fluid" alt="Logo Site" width="500">
+		<a href='static/imagens/Logo_antigo.JPG'></a>
+</header>
+<body class="position-relative" style="background-image: url(static/imagens/fundo_2.jpg); background-size: cover; background-repeat: no-repeat;" >
+
+<div align="center">
+    <header class="container">
+        <div>
+            {% include 'navbar.html' %}
+        </div>
+    </header>
+</div>
+
+        {% block body %}
+        {% endblock %}
+
+
+</body>
+<footer class="container mt-5 text-muted text-center">
+    <div class="container text-center text-muted pt-2 pb-2">
+        <h3>Proxima corrida em:</h3>
+        <script language="JavaScript1.2">
+              var aa = 2021
+              var mm = 07
+              var dd = 17
+              var hh = 16
+              var mi = 00
+
+            function setcountdown(theyear,themonth,theday,hour,minutes) {
+            yr=theyear;mo=themonth;da=theday;h=hour;m=minutes;
+            } setcountdown(aa,mm,dd,hh,mi)
+
+
+            var occasion="Corrida"
+            var message_on_occasion="É hoje"
+
+
+            var countdownwidth='510px'
+            var countdownheight='200px'
+            var countdownbgcolor='#000000'
+            var opentags='<font face="Verdana" size="5" color="#999999">'
+            var closetags='</font>'
+
+
+            var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+            var crosscount=''
+
+            function start_countdown(){
+            if (document.layers)
+            document.countdownnsmain.visibility="show"
+            else if (document.all||document.getElementById)
+            crosscount=document.getElementById&&!document.all?document.getElementById("countdownie") : countdownie
+            countdown()
+            }
+
+            if (document.all||document.getElementById)
+            document.write('<span id="countdownie" style="width:'+countdownwidth+'; background-color:'+countdownbgcolor+'"></span>')
+
+            window.onload=start_countdown
+
+
+            function countdown(){
+            var today=new Date()
+            var todayy=today.getYear()
+            if (todayy < 1000)
+            todayy+=1900
+            var todaym=today.getMonth()
+            var todayd=today.getDate()
+            var todayh=today.getHours()
+            var todaymin=today.getMinutes()
+            var todaysec=today.getSeconds()
+            var todaystring=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+            futurestring=montharray[mo-1]+" "+da+", "+yr+" "+h+":"+m
+            dd=Date.parse(futurestring)-Date.parse(todaystring)
+            dday=Math.floor(dd/(60*60*1000*24)*1)
+            dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1)
+            dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1)
+            dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1)
+            //if on day of occasion
+            if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=1&&todayd==da){
+            if (document.layers){
+            document.countdownnsmain.document.countdownnssub.document.write (opentags+message_on_occasion+closetags)
+            document.countdownnsmain.document.countdownnssub.document.close()
+            }
+            else if (document.all||document.getElementById)
+            crosscount.innerHTML=opentags+message_on_occasion+closetags
+            return
+            }
+            //if passed day of occasion
+            else if (dday<=-1){
+            if (document.layers){
+            document.countdownnsmain.document.countdownnssub.document.write(opentags+"Occasion already passed! "+closetags)
+            document.countdownnsmain.document.countdownnssub.document.close()
+            }
+            else if (document.all||document.getElementById)
+            crosscount.innerHTML=opentags+"Já passou"+closetags
+            return
+            }
+            //else, if not yet
+            else{
+            if (document.layers){
+            document.countdownnsmain.document.countdownnssub.document.write(opentags+dday+ " days, "+dhour+" hours, "+dmin+" minutes, and "+dsec+" "+occasion+closetags)
+            document.countdownnsmain.document.countdownnssub.document.close()
+            }
+            else if (document.all||document.getElementById)
+            crosscount.innerHTML=opentags+dday+ " dias, "+dhour+" horas, "+dmin+" minutos e "+dsec+" segundos."
+            }
+            setTimeout("countdown()",1000)
+            }
+        </script>
+
+    </div>
+
+    Copa Kart dos Amigos - All Friends Reserved - 2018
+</footer>
+
+
+</html>

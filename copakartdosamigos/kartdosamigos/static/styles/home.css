@@ -1,0 +1,77 @@
+li {
+  list-style-type: none;
+}
+
+.mini {
+    background: #ffffff; /* Fondo miniatura */
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 3%;
+    border-radius: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    height: 50%;
+    width: 160px;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.mini1 {
+    background: #ffffff; /* Fondo miniatura */
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 3%;
+    border-radius: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    height: 50%;
+    width: 160px;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.mini:hover {
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    height: 150 px;
+}
+#gif {
+    text-align: center;
+}
+
+ #videobox {
+    width: 100%;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+    border-radius: 5%;
+    background: #ffffff; /* Fondo VideoBox */
+    border: 1% solid #5A5A5A;
+    -moz-box-shadow: 0% 0% 5% #E3E3E3;
+    -webkit-box-shadow: 0% 0% 5% #E3E3E3;
+    box-shadow: 0% 0% 5% #E3E3E3;
+
+.agenda {  }
+
+/* Dates */
+.agenda .agenda-date { width: 250px; }
+.agenda .agenda-date .dayofmonth {
+  width: 60px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 10px;
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em;
+}
+
+.texto{
+    textarea
+}
